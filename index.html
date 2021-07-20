@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--title define o texto que aparece no topo da janela do navegardor e destacado nos mecanismos de busca -->
+    <title>Página para Exercícios HTML | Gama Academy</title>
+
+    <!--Charset "UTF-8" garente que os caracteres especiais sejam exibidos de forma correta-->
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="Texto descritivo da página web" />
+
+    <meta name="author" content="Gama Academy" />
+
+    <!--Viewport é responsável pela responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bloco de estilização via css (em comentário para utilização do link)
+        <style type="text/css">
+            body{
+                background-color: yellow;
+            }
+        </style>-->
+
+    <!--Enquanto a meta style tras a stilização dentro da página o link associa com um arquivo externo-->
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <!--Adicionar JavaScript--(em comentário para utilização de arquivo externo)
+        <script type="text/javascript">
+            alert("Oi Mundo!")
+        </script> -->
+
+    <!--Forma de buscar arquivo externo de JS-->
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <!--Semântica - Cabeçalho-->
+    <header>
+        <!--Imagens alt -texto alternativo title - aparece quando passa o mouse-->
+        <img src="logochillermtech.jpg" alt="Logo da Empresa" title="Logo da empresa" />
+    </header>
+
+    <!--Semântica - Conteúdo principal-->
+    <main>
+        <section>
+            <div>
+                <!--h1 até h6 para títulos-->
+                <!-- <p> para parágrafo </p> -->
+
+                <!--para link (Pode estar dentro de texto ou ser imagem)-->
+                <a href="https://google.com" title="Site do Google" target="_blank">
+                    Teste de Link
+                </a>
+            </div>
+            <div>
+                <img src="https://www.hypeness.com.br/1/2018/12/imagens-surreais.jpg" alt="Imagens Surreais"
+                    title="Imagens Surreais" />
+            </div>
+            <div>
+                <!--video-->
+                <video width="550" height="560" controls>
+                    <source src="thor.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div>
+                <!--Listas-->
+                <!--Lista desordenada-->
+                <ul type="circle">
+                    <li>Item 1</li>
+                    <li>Item 1</li>
+                </ul>
+
+                <!--Lista ordenada-->
+                <ol start="3" type="A">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+
+                <!--Lista de definição-->
+                <dl>
+                    <dt>Palavra</dt>
+                    <dd>Explicação da palavra</dd>
+                </dl>
+            </div>
+            <div>
+                <!--tabela-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mês da atividade</th>
+                            <th>Nome da atividade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Janeiro</td>
+                        </tr>
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td rowspan="2">meditação</td>
+                        </tr>
+                        <tr>
+                            <td>Março</td>
+                        </tr>
+                        <tr>
+                            <td>Abril</td>
+                            <td>Natação</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total de atividades</td>
+                            <td>2 atividades</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div>
+                <!--Formulário-->
+                <form action="#" method="POST"></form>
+
+                <label for="campo1">Nome</label>
+                <input type="text" name="nome" id="campo1" />
+
+                <label for="campo2">Interesses de Estudo</label>
+                <select name="interesse" id="campo2">
+                    <option value="1">Vendas</option>
+                    <option value="2">Marketing</option>
+                </select>
+
+                <fieldset>
+                    <legend>Interesses de Estudo</legend>
+                    <label for="campo31">Vendas</label>
+                    <input type="radio" name="interesse2" value="1" id="campo31" />
+                    <label for="campo32">Marketing</label>
+                    <input type="radio" name="interesse2" value="2" id="campo32" />
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Interesses de Estudo 2</legend>
+                    <label for="campo41">Vendas</label>
+                    <input type="checkbox" name="interesse3" value="1" id="campo41" />
+                    <label for="campo42">Marketing</label>
+                    <input type="checkbox" name="interesse3" value="2" id="campo42" />
+                </fieldset>
+
+                <input type="submit" value="Enviar formulário" />
+            </div>
+        </section>
+
+    </main>
+
+    <!--Semântica - rodapé-->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
